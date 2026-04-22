@@ -1,4 +1,4 @@
-#Taller de lenguajes de marcado y tecnologías web
+## Taller de lenguajes de marcado y tecnologías web
 
 **1er Cuatrimestre 2026 "Mascotas Felices**
 
