@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="Estilo.css">
+        <link rel="stylesheet" href="Estilo.CSS">
         <title> RescatAR</title>
     </head>
 
@@ -20,11 +20,34 @@
         <main>
             <section>   
                 <h2>Contacto</h2>
-                <p>si deses o puede, adoptar o colaborar con nuestros animales, podes comunicartecon nosotros a traves de los siguientes medios</p>
+                <p>Si deseas consultarnos o apoyarnos, podes comunicarte con nosotros a través de los siguientes medios <br>Puedes adoptar a uno de nuestro animales completando el siguiente formulario.</p>
             </section>
+        <!--Agrege un formulario para los programas -->
+        <form action="/enviar" method="post"> 
+         
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre"
+              name="nombre" required>
 
+            <label for="email"> Email</label>
+            <input type="email" id="email"
+              name="email" required>
 
-            <ul>
+            <label for="programa">Programa</label>
+            <select id="programa" name="programa">
+              <option value="">Rescate Animal</option>
+              <option value="">Atención Veterinaria</option>
+              <option value="">Adopción Responsable</option>
+            </select>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje">
+                escribe tu mensaje
+            </textarea>
+
+            <button type="submit">Enviar</button>
+        </form>    
+
+           
                 <li><strong> Correo electrónico:</strong><a href="mailto:MascotasFelices@gmail.com">MascotasFelices@gmail.com</a></li>
                 <li><strong> Teléfono:</strong><a href="tel:+541165254875">+54 11 6525-4875</a></li>
                 <li><strong> Dirección:</strong>San Lorenzo 3133, Provincia de Buenos Aires, Argentina</li>
@@ -33,16 +56,16 @@
                     <a href="https://www.Facebook.com/MascotasFelices/" target="_blank">Facebook</a>
                 </li>
             </ul>
-        </section>
+        
     </main>
 
     <footer>
         <p>© 2026 RescatAR - Todos los derechos reservados🐾</p>
-         <section id="contacto">
+         <div id="contacto">
             <a href="https://www.instagram.com/" target="_blank"> Nuestras Redes</a>
             <a href="mailto:mascotasfelices@gmail.com">Escribinos</a>
             <a href="tel:+541134657898">Llamanos</a>
-         </section>
+         </div>
        </footer>
     
 </body>
