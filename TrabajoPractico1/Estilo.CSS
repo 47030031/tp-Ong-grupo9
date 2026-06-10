@@ -1,9 +1,9 @@
 /*Variables de la paleta de la pagina*/
 :root{
-   --color-fondo1: #6D3C1C; /*Colores utilizados tipicamente por paginas web de rescate por ser calidos y confiables*/
+   --color-fondo1: #f77a27; /*Colores utilizados tipicamente por paginas web de rescate por ser calidos y confiables*/
     --color-texto: #1a1a1a;
-    --Color-Fondo: #F7F9FA;
-    --Detalles: #C58B4E;
+    --Color-Fondo: #ffffff;
+    --Detalles: #c1cbe7;
    
     --fuente-principal: "Inter", sans-serif;
 }
@@ -18,7 +18,7 @@ body{
     font-size: 18px;
     color: var(--color-texto);
     background-color: var(--Color-Fondo);
-    max-width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 1rem;
 }
