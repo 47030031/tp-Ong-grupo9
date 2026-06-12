@@ -1,6 +1,6 @@
 ## Taller de lenguajes de marcado y tecnologías web
 
-**1er Cuatrimestre 2026 "Mascotas Felices**
+**1er Cuatrimestre 2026 "RescatAr**
 
 Proyecto web institucional desarrollado por estudiantes, enfocado en el rescate, cuidado y adopción responsable de animales en situación de calle, comisión 2 (mierdoles TT)
 
@@ -24,7 +24,6 @@ Este sitio presenta información sobre nuestra ONG dedicada al rescate de perros
 - Noble Ignacio
 - Romera Pecora Agustín Adolfo
 - Paiva Ivan
-- Bazan Claudio  
 
 ---
 
