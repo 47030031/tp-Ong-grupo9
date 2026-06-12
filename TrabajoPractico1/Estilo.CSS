@@ -7,12 +7,14 @@
    
     --fuente-principal: "Inter", sans-serif;
 }
+
 /*Reset basico*/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: var(--fuente-principal);
     font-size: 18px;
@@ -22,58 +24,71 @@ body{
     margin: 0 auto;
     padding: 1rem;
 }
+
 /*Tipografia*/
 h1{
     font-size: 2rem; 
     color: var(--color-texto);
 
 }
+
 h2{
     font-size: 1.5rem; 
     color: var(--color-texto)
 }
+
 h3{
     font-size: 1rem; 
     color: var(--color-texto);
 }
+
 p{
     margin-bottom: 1rem;
 }
+
 header{
     background-color:  var(--color-fondo1);
     color: var(--Color-Fondo);
     padding: 1rem 1.5rem;
 }
+
 header h1{
   color: var(--Color-Fondo);  
 }
+
 /*Navegacion*/
 nav{
     margin-top: 0.5rem;
 }
+
 nav ul{
     color: var(--color-fondo1)
 }
+
 nav a{
     color: var(--Color-Fondo);
     text-decoration: none;
     font-weight: 600;
 }
+
 section{
  padding:  5rem 2rem;
  max-width: 1100px;
  margin: 0 auto;
 }
+
 article{
     background-color: var(--Detalles);
     color:var(--color-texto);
 }
+
 figure{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,fr));
     gap: 15px;
     justify-items: center;
 }
+
 /*Imagenes galeria*/
 figure img{
     width: 200px;/*ancho de area */
@@ -82,12 +97,14 @@ figure img{
     border-radius: 5px;
 
 }
+
 figcaption{
     grid-column: 1/-1;
     text-align: center;
     font-style: italic;
     margin-top: 10px;
 }
+
 section img {
   width: 800px;
   height: 300px;
@@ -96,10 +113,33 @@ section img {
   margin: 0 auto;
   object-fit: cover;
 }
+
 footer{
     background-color: var(--Detalles);
     color: var(--color-texto);
     padding: 10px 20px; 
     font-size: 14px;  
+}
+
+#index img {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#index .RescateIndex{
+    text-align: center;
+    font-size: 1rem;
+}
+.Ideales{
+    max-width: 900px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--color-fondo1);
+    font-style: italic;
 }
 
