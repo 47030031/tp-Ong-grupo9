@@ -1,0 +1,242 @@
+/* =========================
+   VARIABLES
+========================= */
+:root {
+  --color-fondo: #f5f0e6;
+  --color-primario: #6b4f3a;
+  --color-secundario: #8b6b4a;
+  --color-acento: #c89f6d;
+  --color-texto: #2b2b2b;
+  --color-blanco: #ffffff;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BASE GENERAL
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* =========================
+   NAV
+========================= */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+  padding: 20px 0;
+}
+
+/* =========================
+   SECCIONES (CARDS)
+========================= */
+section {
+  background-color: var(--color-blanco);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+
+  border-left: 5px solid var(--color-acento);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   TIPOGRAFÍA
+========================= */
+h2 {
+  color: var(--color-primario);
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: var(--color-secundario);
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* =========================
+   IMÁGENES
+========================= */
+img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   LISTAS
+========================= */
+ul, dl {
+  margin-left: 20px;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+form {
+  background-color: var(--color-blanco);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--color-secundario);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+}
+
+footer a {
+  color: var(--color-acento);
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+
+.img-contacto {
+  width: 60%;          /* más chica */
+  height: auto;        /* mantiene proporción */
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+
+/* =========================
+   HEADER PRO NIVEL FINAL
+========================= */
+
+.header {
+  background-color: var(--color-primario);
+  padding: 15px 30px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  width: 150px;
+  max-width: 150%;
+  height: auto;
+}
+
+/* AGRUPAR LOGO + TITULO */
+.header-container h1 {
+  color: var(--color-blanco);
+  font-size: 2rem;
+  margin-left: 15px;
+}
+
+/* contenedor izquierdo */
+.header-container {
+  gap: 20px;
+}
+
+/* NAV */
+.header nav {
+  margin-left: auto;
+}
+
+.header nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.header nav a:hover {
+  color: var(--color-acento);
+}
+
+
