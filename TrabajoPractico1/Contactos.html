@@ -1,72 +1,95 @@
 <!DOCTYPE html>
-<html lang ="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="Estilo.CSS">
-        <title> RescatAR</title>
-    </head>
+<html lang="es">
 
-    <body>
-        <header id="titulo">
-                <h1>Como contactarnos</h1>
-                <nav>
-                    <a href="./index.html"> Inicio</a>
-                    <a href="./nosotros.html">Nosotros</a>
-                    <a href="./Contactos.html"> Contactanos</a>
-                    <a href="./programas.html"> Nuestros programas</a>
-                    <br>
-                    <hr>
-                </nav>
-        </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>RescatAR - Contacto</title>
+</head>
 
-        <main>
-            <section>   
-                <h2>Contacto</h2>
-                <p>Si deseas consultarnos o apoyarnos, podes comunicarte con nosotros a través de los siguientes medios <br>Puedes adoptar a uno de nuestro animales completando el siguiente formulario.</p>
-            </section>
-        <!--Agrege un formulario para los programas -->
-        <form action="/enviar" method="post"> 
-         
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre"
-              name="nombre" required> <br>
-            <label for="email"> Email</label>
-            <input type="email" id="email"
-              name="email" required><br>
-            <label for="programa">Programa</label>
-            <select id="programa" name="programa">
-              <option value="">Rescate Animal</option>
-              <option value="">Atención Veterinaria</option>
-              <option value="">Adopción Responsable</option>
-            </select><br>
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje">
-                escribe tu mensaje
-            </textarea>
-            <button type="submit">Enviar</button>
-        </form>    
+<body>
 
-           
-                <li><strong> Correo electrónico:</strong><a href="mailto:MascotasFelices@gmail.com">RescatAR@gmail.com</a></li>
-                <li><strong> Teléfono:</strong><a href="tel:+541165254875">+54 11 6525-4875</a></li>
-                <li><strong> Dirección:</strong>San Lorenzo 3133, Provincia de Buenos Aires, Argentina</li>
-                <li> <strong>📱 Redes sociales:</strong>
-                    <a href="https://www.instagram.com/MascotasFelices/" target="_blank">Instagram</a>,
-                    <a href="https://www.Facebook.com/MascotasFelices/" target="_blank">Facebook</a>
-                </li>
-            </ul>
-        
-    </main>
+<header class="header">
+  <div class="header-container">
+     <img src="img/logo-ong-rescate-unahur.jpeg" class="logo">
+  <h1>Cómo contactarnos</h1>
 
-    <footer>
-        <p>© 2026 RescatAR - Todos los derechos reservados🐾</p>
-        <div id="contacto">
-            <a href="https://www.instagram.com/" target="_blank"> Nuestras Redes</a>
-            <a href="mailto:RescatAR@gmail.com">Escribinos</a>
-            <a href="tel:+541134657898">Llamanos</a>
-        </div>
-    </footer>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contáctanos</a>
+    <a href="programas.html">Programas</a>
+  </nav>
+</header>
+ <main>
+
+  <div style="text-align: center;">
+    <img src="img/foto-de-contactanos.jpeg" class="img-contacto">
+  </div>
+
     
+  <section>
+    <h2>Contacto</h2>
+    <p>
+      Si deseas consultarnos o apoyarnos, podés comunicarte con nosotros a través de los siguientes medios.
+      También podés completar el formulario.
+    </p>
+  </section>
+
+  <section>
+    <h2>Formulario de contacto</h2>
+
+    <form action="/enviar" method="post">
+
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="programa">Programa</label>
+      <select id="programa" name="programa">
+        <option>Rescate Animal</option>
+        <option>Atención Veterinaria</option>
+        <option>Adopción Responsable</option>
+      </select><br>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Escribí tu mensaje"></textarea><br>
+
+      <button type="submit">Enviar</button>
+
+    </form>
+  </section>
+
+  <section>
+    <h2>Otros medios</h2>
+
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:RescatAR@gmail.com">RescatAR@gmail.com</a></li>
+      <li><strong>Teléfono:</strong> <a href="tel:+541165254875">+54 11 6525-4875</a></li>
+      <li><strong>Dirección:</strong> San Lorenzo 3133, Buenos Aires, Argentina</li>
+      <li>
+        <strong>Redes:</strong>
+        <a href="https://www.instagram.com/patitasalrescate/?hl=es" target="_blank" rel="noopener noreferrer">Instagram</a> |
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </li>
+    </ul>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 RescatAR - Todos los derechos reservados 🐾</p>
+
+  <div>
+    <a href="https://www.instagram.com/patitasalrescate/?hl=es" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="mailto:RescatAR@gmail.com">Escribinos</a>
+    <a href="tel:+541165254875">Llamanos</a>
+  </div>
+</footer>
+
 </body>
 </html>
