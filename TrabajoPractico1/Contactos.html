@@ -40,7 +40,7 @@
   <section>
     <h2>Formulario de contacto</h2>
 
-    <form action="/enviar" method="post">
+    <form id="form-contacto"  action="/enviar" method="post">
 
       <label for="nombre">Nombre</label>
       <input type="text" id="nombre" name="nombre" required><br>
@@ -61,6 +61,7 @@
       <button type="submit">Enviar</button>
 
     </form>
+    <div id="msg-contacto"></div>
   </section>
 
   <section>
@@ -90,6 +91,6 @@
     <a href="tel:+541165254875">Llamanos</a>
   </div>
 </footer>
-
+<script src="java/scriptRescatAR.js"></script>
 </body>
 </html>
