@@ -23,7 +23,7 @@ Este sitio presenta información sobre nuestra ONG dedicada al rescate de perros
 
 - Noble Ignacio
 - Romera Pecora Agustín Adolfo
-- Paiva Ivan
+- Paiva Ian
 
 ---
 
