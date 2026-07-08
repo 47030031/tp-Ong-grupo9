@@ -22,21 +22,19 @@
 /* =========================
    BASE GENERAL
 ========================= */
-body {
-  font-family: Arial, sans-serif;
+body { 
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-
   background-color: var(--color-fondo);
   color: var(--color-texto);
-
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 /* =========================
-   HEADER
+   HEADER & NAV (Básico
 ========================= */
 header {
   background-color: var(--color-primario);
@@ -49,9 +47,6 @@ header h1 {
   font-size: 2rem;
 }
 
-/* =========================
-   NAV
-========================= */
 nav {
   margin-top: 10px;
 }
@@ -71,28 +66,104 @@ nav a:hover {
   color: var(--color-blanco);
 }
 
+h2{
+    font-size:2rem;
+    font-weight:700;
+}
+
+h3{
+    font-weight:600;
+}
+
 /* =========================
-   MAIN
+   HEADER piolon
+========================= */
+.header {
+  background-color: var(--color-primario);
+  padding: 15px 30px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-container h1 {
+  color: var(--color-blanco);
+  font-size: 2rem;
+  margin-left: 15px;
+}
+
+.logo {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+.header nav {
+  margin-left: auto;
+}
+
+.header nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.header nav a:hover {
+  color: var(--color-acento);
+  background-color: transparent;
+}
+
+/* =========================
+   BOOTSTRAP PERSO
+========================= */
+.navbar-rescatAR {
+  background-color: var(--color-primario);
+}
+
+.navbar-logo {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* =========================
+      CARDS
 ========================= */
 main {
   padding: 20px 0;
 }
 
-/* =========================
-   SECCIONES (CARDS)
-========================= */
 section {
   background-color: var(--color-blanco);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
-
   border-left: 5px solid var(--color-acento);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* =========================
-   TIPOGRAFÍA
+   TIPOGRAFÍA Y LISTAS
 ========================= */
 h2 {
   color: var(--color-primario);
@@ -108,24 +179,39 @@ p {
   margin-bottom: 10px;
 }
 
+ul, dl {
+  margin-left: 20px;
+}
+
+.centrado {
+  text-align: center;
+}
+
 /* =========================
    IMÁGENES
 ========================= */
 img {
-  width: 100%;
+  max-width: 100%; /* Corregido para no estirar logos ni romper componentes */
+  height: auto;
   max-height: 400px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;
 }
 
-/* =========================
-   LISTAS
-========================= */
-ul, dl {
-  margin-left: 20px;
+.img-contacto {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
 }
-
+.img-nosotros{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:10px;
+}
 /* =========================
    FORMULARIO
 ========================= */
@@ -155,10 +241,68 @@ button {
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 button:hover {
   background-color: var(--color-secundario);
+}
+
+/* =========================
+   FLEXBOX 
+========================= */
+.programas-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.programas-flex article {
+  flex: 1 1 300px;
+}
+
+.equipo-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.equipo-flex article {
+  flex: 1 1 250px;
+  background-color: var(--color-blanco);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid var(--color-acento);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.equipo-flex article:hover {
+  transform: translateY(-5px);
+}
+
+.equipo-flex h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.equipo-flex p {
+  margin: 0;
+}
+
+/* =========================
+   POSICIONAMIENTO
+========================= */
+.info-card {
+  position: relative;
+}
+
+.info-card::after {
+  content: "🐾";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
 }
 
 /* =========================
@@ -179,64 +323,49 @@ footer a {
 }
 
 
-.img-contacto {
-  width: 60%;          /* más chica */
-  height: auto;        /* mantiene proporción */
-  display: block;
-  margin: 20px auto;
-  border-radius: 12px;
+section p{
+    max-width:900px;
+}
+
+footer{
+    padding:35px;
+}
+footer a{
+    margin:0 12px;
 }
 
 
 /* =========================
-   HEADER PRO NIVEL FINAL
+   Cards Bootstrap
 ========================= */
 
-.header {
+.card{
+  border: none;
+  border-left: 5px solid var(--color-acento);
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.card-title{
+  color: var(--color-primario);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.card-text{
+  color: var(--color-texto);
+}
+
+.btn-primary{
   background-color: var(--color-primario);
-  padding: 15px 30px;
+  border: none;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.btn-primary:hover{
+  background-color: var(--color-secundario);
 }
-
-/* LOGO */
-.logo {
-  width: 150px;
-  max-width: 150%;
-  height: auto;
-}
-
-/* AGRUPAR LOGO + TITULO */
-.header-container h1 {
-  color: var(--color-blanco);
-  font-size: 2rem;
-  margin-left: 15px;
-}
-
-/* contenedor izquierdo */
-.header-container {
-  gap: 20px;
-}
-
-/* NAV */
-.header nav {
-  margin-left: auto;
-}
-
-.header nav a {
-  color: var(--color-blanco);
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.header nav a:hover {
-  color: var(--color-acento);
-}
-
-
